@@ -13,7 +13,21 @@ body, html {
         text-align: right;
         justify-content: center;
 
-        padding:  50px 50px 75px 50px;
+        padding:  50px 50px 25px 50px;
+        margin: auto;
+
+      }
+
+      #paragraph {
+        height:auto;
+        background-color:#2A9D8F;
+        color: white;
+        font-size: 24px;
+
+        text-align: justify;
+        justify-content: center;
+
+        padding:  25px 100px 25px 100px;
         margin: auto;
 
       }
@@ -27,7 +41,7 @@ body, html {
         text-align: left;
         justify-content: center;
 
-        padding:  25px 50px 25px 100px;
+        padding:  25px 100px 25px 100px;
         margin: auto;
 
       }
@@ -41,7 +55,7 @@ body, html {
         text-align: center;
         justify-content: center;
 
-        padding:  25px 0px 25px 25px;
+        padding:  25px 25px 25px 25px;
         margin: auto;
 
       }
@@ -64,12 +78,11 @@ body, html {
         background-image: url('./img/background.jpg');
         filter: grayscale(100%);
       
-        /* Full height */
         height: 75%; 
       
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
-        background-position: center;
+        background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -79,17 +92,16 @@ body, html {
         background-image: url('./img/background.jpg');
         justify-content: center;
         display: block;
-        padding:  150px 50px 50px 75px;
+        padding:  150px 75px 100px 75px;
         margin: auto;
         position: relative;
         
       
-        /* Full height */
-        height: 100%; 
+        height: auto; 
       
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
-        background-position: center;
+        background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -121,3 +133,36 @@ body, html {
           color: #F4A259;
           text-decoration: underline;
         }
+
+        /* Large mobile device screens */
+@media only screen and (max-width:1366px) {
+  :root {
+    --bg-image-jpg: url('./img/background.jpg');
+    --bg-pos: top left;
+    --bg-size: 100vw auto;
+  }
+}
+/* Load a smaller image for smaller screens */
+@media only screen and (max-width:970px) {
+  :root {
+    --bg-image-jpg: url('./img/background.jpg');
+  }
+}
+/* Smallest image for phone screens */
+@media only screen and (max-width:500px) {
+  :root {
+    --bg-image-jpg: url('./img/background.jpg');
+  }
+}
+body {
+  background-color: #fff;
+  margin: 0px auto;
+  padding: 0px auto;
+}
+.webp body {
+  background: var(--bg-image-webp) var(--bg-pos) fixed no-repeat;
+  background-size: var(--bg-size);
+}
+.no-webp body {
+  background: var(--bg-image-jpg) var(--bg-pos) fixed / var(--bg-size) no-repeat;
+}
