@@ -1,168 +1,132 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+@-ms-viewport {
+  width: device-width ;
+}
+
 body, html {
         height: 100%;
         font-family: 'helvetica';
       }
 
-      #introduction {
-        height:auto;
-        background-color:#2A9D8F;
-        /*opacity: 0.4;*/
-        color: white;
-        font-size: 50px;
-        font-style: italic;
-        text-align: right;
-        justify-content: center;
+#introduction {
+  height:auto;
+  background-color:#2A9D8F;
 
-        padding:  50px 50px 25px 50px;
-        margin: auto;
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  text-align: right;
+  justify-content: center;
 
-      }
+  padding:  50px 50px 25px 50px;
+  margin: auto;
 
-      #paragraph {
-        height:auto;
-        background-color:#2A9D8F;
-        color: white;
-        font-size: 24px;
+}
 
-        text-align: justify;
-        justify-content: center;
+#paragraph {
+  height:auto;
+  background-color:#2A9D8F;
+  color: white;
+  font-size: 24px;
 
-        padding:  25px 100px 25px 100px;
-        margin: auto;
+  text-align: justify;
+  justify-content: center;
 
-      }
+  padding:  25px 100px 25px 100px;
+  margin: auto;
 
-      #conclusion {
-        height:auto;
-        background-color:#847979;
-        color: white;
-        font-size: 24px;
+}
 
-        text-align: left;
-        justify-content: center;
+#footer {
+  height:auto;
+  background-color:#847979;
+  color: white;
+  font-size: 12px;
 
-        padding:  25px 100px 25px 100px;
-        margin: auto;
+  text-align: center;
+  justify-content: center;
 
-      }
+  padding:  25px 25px 25px 25px;
+  margin: auto;
 
-      #footer {
-        height:auto;
-        background-color:#847979;
-        color: white;
-        font-size: 12px;
+}
 
-        text-align: center;
-        justify-content: center;
+#p-text {
+  color: white;
+  font-size:16px;
+  padding:  25px 25px 0px 25px;
+}
 
-        padding:  25px 25px 25px 25px;
-        margin: auto;
+iframe {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border:none;
+}
 
-      }
+.parallax {
+  /* The image used */
+  background-image: url('./img/background.jpg');
+  filter: grayscale(100%);
 
-      #p-text {
-        color: white;
-        font-size:16px;
-        padding:  25px 25px 0px 25px;
-      }
+  height: 75%; 
 
-      iframe {
-        padding: 0;
-        margin: 0;
-        outline: none;
-        border:none;
-    }
-      
-      .parallax {
-        /* The image used */
-        background-image: url('./img/background.jpg');
-        filter: grayscale(100%);
-      
-        height: 75%; 
-      
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-      .parallax-graphs {
-        /* The image used */
-        background-image: url('./img/background.jpg');
-        justify-content: center;
-        display: block;
-        padding:  150px 75px 100px 75px;
-        margin: auto;
-        position: relative;
-        
-      
-        height: auto; 
-      
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+.parallax-graphs {
+  /* The image used */
+  background-image: url('./img/background.jpg');
+  justify-content: center;
+  display: block;
+  padding:  100px 75px 100px 75px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  
 
-      a {
-        color: F4A259;
-      }
+  height: auto; 
 
-      /* unvisited link */
-        a:link {
-          color: #2A9D8F;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-        }
+}
 
-        /* visited link */
-        a:visited {
-          color: #F4A259;
+a {
+  color: F4A259;
+}
 
-        }
+/* unvisited link */
+  a:link {
+    color: #F4A259;
 
-        /* mouse over link */
-        a:hover {
-          color: #0A0908;
-
-        }
-
-        /* selected link */
-        a:active {
-          color: #F4A259;
-          text-decoration: underline;
-        }
-
-        /* Large mobile device screens */
-@media only screen and (max-width:1366px) {
-  :root {
-    --bg-image-jpg: url('./img/background.jpg');
-    --bg-pos: top left;
-    --bg-size: 100vw auto;
   }
-}
-/* Load a smaller image for smaller screens */
-@media only screen and (max-width:970px) {
-  :root {
-    --bg-image-jpg: url('./img/background.jpg');
+
+  /* visited link */
+  a:visited {
+    color: #F4A259;
+
   }
-}
-/* Smallest image for phone screens */
-@media only screen and (max-width:500px) {
-  :root {
-    --bg-image-jpg: url('./img/background.jpg');
+
+  /* mouse over link */
+  a:hover {
+    color: #0A0908;
+
   }
-}
-body {
-  background-color: #fff;
-  margin: 0px auto;
-  padding: 0px auto;
-}
-.webp body {
-  background: var(--bg-image-webp) var(--bg-pos) fixed no-repeat;
-  background-size: var(--bg-size);
-}
-.no-webp body {
-  background: var(--bg-image-jpg) var(--bg-pos) fixed / var(--bg-size) no-repeat;
-}
+
+  /* selected link */
+  a:active {
+    color: #F4A259;
+    text-decoration: underline;
+  }
