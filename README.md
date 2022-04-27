@@ -7,9 +7,9 @@
   <p align="center">
     <i>A brief README guide created to accompany this capstone project.</i>
     <br />
-    <a href="https://shewilliams.github.io/whynyc/">Website</a>
+    <a href="https://shewilliams.github.io/whynyc/" target="_blank">Website</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">White Paper</a>
+    <a href="https://github.com/othneildrew/Best-README-Template/issues" target="_blank">White Paper</a>
   </p>
 </div>
 
@@ -79,7 +79,7 @@ In the main directory of this repository, the following are included:
 * <b>img</b> - contains images used for website and README.md file.
 * <b>figures</b> - contains charts created in Python coding. Labeled according title in white paper.
 * <b>tables</b> - contains dataframes created in Python coding. Labeled according title in white paper.
-* <b>white paper</b> - In-depth breakdown of the approach to this project.
+* <b>whitepaper</b> - In-depth breakdown of the approach to this project.
 * <b>la.html</b> - Exported Plotly HTML file from Python. A topic bubble map for LA.
 * <b>nyc.html</b> - Exported Plotly HTML file from Python. A topic bubble map for NYC.
 * <b>style.css</b> - styling sheet for website
