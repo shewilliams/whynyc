@@ -9,7 +9,7 @@
     <br />
     <a href="https://shewilliams.github.io/whynyc/" target="_blank">Website</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues" target="_blank">White Paper</a>
+    <a href="https://github.com/shewilliams/whynyc/blob/main/whitepaper.pdf" target="_blank">White Paper</a>
   </p>
 </div>
 
