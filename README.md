@@ -84,7 +84,7 @@ In the main directory of this repository, the following are included:
 * <b>nyc.html</b> - Exported Plotly HTML file from Python. A topic bubble map for NYC.
 * <b>style.css</b> - styling sheet for website
 
-If you're interested in the Python coding, please look at the <b>code</b> folder. Everything needed for the analysis is in that folder. All other items are either for the website or accompanies the white paper.
+If you're interested in the Python coding, please look at the <b>code</b> folder. Everything needed for the analysis is in that folder. All other items are either for the website or accompanies the white paper. An alternative is to download at the ZIP files (whynyc.zip and whynyc-code.zip) provided.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
